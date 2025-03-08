@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="project.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="project.js"></script>
+    <script src="db.js"></script>
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <div id="firstpage" class="page">
+        <header>
+            <p><span>CTIS</span> Crypto Trading Information System</p>
+            <p>Team Members: Yaman Türköz, Meriç Cengiz, Cıvan Çiçek, Baturalp Öztürk</p>
+        </header>
+        <div>
+
+        </div>
+        <div id="profilecontainer">
+            <p id="empty">Empty</p>
+            <ul>
+
+            </ul>
+        </div>
+        <section id="addsection">
+            <div id="addDiv">
+                <h2>New Profile</h2>
+                <input type="text" placeholder="Enter new profile..." id="profilename">
+                <br>
+                <button id="addbtn">Add</button>
+            </div>
+        </section>
+        <footer>
+            <button id="newprofile">+ New Profile</button>
+        </footer>
+    </div>
+    <div id="secondpage" class="page">
+        <header>
+            <p><span>CTIS</span> Crypto Trading Information System</p>
+            <div>
+                <img src="./images/12-512.webp" alt="">
+                <span id="pname"></span>
+                <button id="logout"><img
+                        src="./images/339-3396821_png-file-svg-download-icon-logout-transparent-png.png" alt="">
+                    Logout</button>
+            </div>
+        </header>
+        <div id="info">
+            <h1>Day <span id="counter">2</span></h1>
+            <p id="date">02 January 2021</p>
+            <div>
+                <button id="nextDay"><img src="./images/skip-icon-png-18.jpg" alt="">Next Day</button>
+                <button id="btnPlay"><img src="./images/play-button-6.png" alt="">Play</button>
+            </div>
+        </div>
+        <table id="cryptotable">
+            <tr>
+                <td>
+                    <img src="./images/ada.png" alt="" class="cimg">
+                    <img src="./images/avax.png" alt="" class="cimg">
+                    <img src="./images/btc.png" alt="" class="cimg">
+                    <img src="./images/doge.png" alt="" class="cimg">
+                    <img src="./images/eth.png" alt="" class="cimg">
+                    <img src="./images/pol.png" alt="" class="cimg">
+                    <img src="./images/snx.png" alt="" class="cimg">
+                    <img src="./images/trx.png" alt="" class="cimg">
+                    <img src="./images/xrp.png" alt="" class="cimg">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="" alt="" id="selectedimg">
+                    <span id="cname"></span>
+                    <span id="coininfo"></span>
+                </td>
+            </tr>
+            <tr>
+                <td id="chart">
+
+                </td>
+            </tr>
+        </table>
+        <div id="money">
+            <p></p>
+        </div>
+        <div id="tradingandwallet">
+            <table style="width: 300px; height: 130px;" id="firsttable">
+                <tr>
+                    <td>
+                        <b>Trading</b>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td id="buysell">
+                        <div id="buy">Buy</div>
+                        <div id="sell">Sell</div>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td>
+                        <input type="text" id="amount2" placeholder="Amount">
+                        <span id="result"> = $ </span>
+                        <span id="result2"></span>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td>
+                        <div id="buybutton"> <span id="buyorsell"> </span> <span id="coinname"> </span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="secondtable">
+                <tr>
+                    <td colspan="4">
+                        <b>Wallet</b>
+                    </td>
+                </tr>
+                <tr style="display: flex" class="wallettable" id="purple">
+                    <td>Coin</td>
+                    <td>Amount</td>
+                    <td>Subtotal</td>
+                    <td>Last Close</td>
+                </tr>
+                <tr style="display: flex" class="wallettable" id="green">
+                    <td>Dolar</td>
+                    <td id="curmoney"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+}
+
+.page {
+    border: 1px solid rgb(169, 160, 160);
+    width: 1000px;
+
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#firstpage {
+    height: 100vh;
+}
+
+#firstpage header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p span {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#profilecontainer {
+    height: 91%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profilecontainer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+#empty {
+    font-size: 50px;
+    color: rgb(177, 184, 190);
+}
+
+#newprofile {
+    padding: 5px 10px;
+}
+
+.profiles img {
+    width: 50px;
+}
+
+.profiles {
+    background-color: rgb(237, 218, 218);
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    position: relative;
+}
+
+.profiles:hover {
+    background-color: rgb(194, 179, 179);
+}
+
+.delete {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: blue;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.delete:hover {
+    cursor: pointer;
+}
+
+#addsection #addDiv {
+    background-color: rgb(184, 169, 169);
+    position: absolute;
+    padding: 10px 20px;
+    top: 40px;
+    z-index: 3;
+}
+
+#addsection {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#addDiv input {
+    margin: 10px 0px;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0 5px;
+    margin-left: 10px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: block;
+    z-index: 3;
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+#secondpage {
+    height: 100%;
+}
+
+#secondpage header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 10px;
+    padding-right: 5px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info img {
+    width: 10px;
+    padding-right: 5px;
+    margin: 0;
+}
+
+#info * {
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cryptotable tr:first-of-type td {
+    display: flex;
+    justify-content: center;
+
+}
+
+#cryptotable tr:nth-of-type(2) td {
+    display: flex;
+    align-items: center;
+}
+
+#cryptotable tr:nth-of-type(3) td {
+    display: flex;
+}
+
+#cryptotable td {
+    border: 1px solid grey;
+    width: 100%;
+
+}
+
+table#cryptotable img {
+    width: 25px;
+    padding: 5px;
+}
+
+.cimg:hover {
+    cursor: pointer;
+}
+
+.heartbeat {
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    50% {
+        transform: scale(1.4);
+    }
+}
+
+.stick {
+    border: 1px solid black;
+    width: 0;
+    position: absolute;
+}
+
+.bar {
+    position: absolute;
+    width: 6px;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+#chart {
+    height: 300px;
+    position: relative;
+}
+
+
+
+#closeLine {
+    width: 100%;
+    border-bottom: 1px dotted rgb(119, 108, 108);
+
+    position: absolute;
+    text-align: right;
+    color: gray;
+
+}
+
+.maxmin {
+    width: 100%;
+    position: absolute;
+    text-align: right;
+}
+
+#tradingandwallet {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border-collapse: collapse;
+}
+
+
+
+
+#money p {
+    padding-top: 4em;
+}
+
+#buysell {
+    border: 0.5px solid gray;
+    border-radius: 7px;
+    width: 95.63%;
+}
+
+#buysell div {
+    padding: 0 60px;
+    border-radius: 5px;
+}
+
+
+
+#buy {
+    background-color: green;
+    color: white;
+}
+
+#buybutton {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+#buybutton:hover {
+    cursor: pointer;
+}
+
+#purple {
+    background-color: #8a8af7;
+    color: white;
+    font-weight: bold;
+}
+
+#green {
+    background-color: #92ff92;
+    color: black;
+
+}
+
+#money {
+    font-size: 50px;
+
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.wallettable td {
+    padding: 5px;
+    font-weight: lighter;
+    width: 130px;
+    padding-left: 10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+#date {
+    font-weight: bold;
+}
+
+#curmoney {
+    font-weight: bold;
+}
+
+.wallet img {
+    width: 20px;
+    margin-left: 0;
+    padding-right: 5px;
+}
+
+
+
+#tradingandwallet tr:first-of-type td {
+    display: flex;
+    justify-content: center;
+
+}
+
+#tradingandwallet tr:nth-of-type(2) td {
+    display: flex;
+    align-items: center;
+}
+
+.wallet td {
+    width: 145px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+
+
+tr.wallet {
+    display: flex;
+
+}
+
+#amount2 {
+    padding: 2px;
+}
+
+#firsttable {
+    margin-right: 20px;
+}
+
+
+#coininfo {
+    margin-left: 20px;
+    color: red;
+}
