@@ -189,7 +189,7 @@ export const useAppStore = create<AppState>()(
             },
         }),
         {
-            name: 'ctis-storage',
+            name: 'coins-storage',
             partialize: (state) => ({
                 profiles: state.profiles,
                 currentProfileId: state.currentProfileId,

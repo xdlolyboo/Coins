@@ -20,7 +20,7 @@ export function Header() {
                     </div>
                     <div>
                         <h1 className="text-xl font-bold text-white">
-                            CTIS <span className="text-blue-400">v2</span>
+                            Coins
                         </h1>
                         <p className="text-xs text-gray-500">Crypto Trading Simulator</p>
                     </div>

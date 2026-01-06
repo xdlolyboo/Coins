@@ -28,7 +28,7 @@ function App() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
             </svg>
           </div>
-          <h2 className="text-xl font-semibold mb-2">Loading CTIS v2</h2>
+          <h2 className="text-xl font-semibold mb-2">Loading Coins</h2>
           <p className="text-gray-400">Initializing market data...</p>
           <div className="mt-4 w-48 h-1 bg-gray-800 rounded-full mx-auto overflow-hidden">
             <div className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full shimmer" style={{ width: '60%' }} />
