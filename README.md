@@ -1,12 +1,12 @@
-# CTIS v2 - Crypto Trading Information System
+# Crypto Trading Simulator
 
 A modern crypto trading simulator built with React, TypeScript, and Tailwind CSS. Practice trading with synthetic historical data and track your portfolio performance.
 
-![CTIS v2 Dashboard](./screenshots/dashboard.png)
+
 
 ## Features
 
-- **Premium Dark UI** - Glassmorphism design with smooth animations
+
 - **Professional Charts** - Candlestick charts powered by Lightweight Charts (TradingView)
 - **Portfolio Management** - Track holdings, P&L, and total value
 - **Trading Simulation** - Buy/sell crypto with realistic price movements
@@ -53,14 +53,6 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 └── package.json
 ```
 
-## Data Source
-
-The app uses a [cryptocurrency snapshot dataset](https://www.kaggle.com/datasets/mmohaiminulislam/crypto-currency-datasets) from Kaggle. Historical price data is synthetically generated using percentage change columns to create realistic 30-day price movements for the simulation.
-
-## How to Use
-
-1. **Create a Profile** - Enter your name to start with $10,000 in virtual cash
-2. **Select a Coin** - Click on any cryptocurrency from the grid
 3. **View the Chart** - Watch price movements with professional candlestick charts
 4. **Trade** - Enter an amount and click Buy or Sell
 5. **Simulate Time** - Use the controls to advance day-by-day or auto-play
